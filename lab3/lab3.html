@@ -4,29 +4,39 @@
 <head>
 <title>Page Title</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script>
+  $(() =>  {
 
+    var $images = $("#d1 > .c1 > a").clone();
 
+    var $length = $images.length;
+    var $imgShow = 0;
 
+    $("#d1 > .c1").html($("#d1 > .c1 > a:first"));
 
+    $("#d1 > .c1 > a").click(function(event) {
 
+      $(this).children().attr("src",
+        $("img", $images).eq(++$imgShow % $length).attr("src"));
+      event.preventDefault();
 
-
-
+    });
+  });
+</script>
 
 <body>
 
 <center>
 <h1>My profile</h1>
 <h2>Ponprom Samanwong</h2>
-</center>
-<div><center>
+
+<div>
 <a href="https://google.com">
 <img src="D:\Client\lab3\2.jpg" style="width:800px;height:600px;">
 </a>
-</center></div>
+</div>
 
-
-<center>
 <table id="t01">
   <tr>
     <th>Firstname</th>
@@ -49,21 +59,17 @@
     <td>80</td>
   </tr>
 </table>
+
+<div id="d1">
+  <div class="c1">
+           <a href="#"><img src="https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half/public/field_blog_entry_images/2018-02/cloned_dogs_mdorottya_123rf.png?itok=yiaSkqQA"></a>
+           <a href="#"><img src="https://boygeniusreport.files.wordpress.com/2016/11/puppy-dog.jpg?quality=98&strip=all&w=782"></a>
+           <a href="#"><img src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2018/03/Pomeranian_01.jpeg"></a>       
+  </div>
+</div>
 </center>
 
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
 </body>
-
-
-
-
-
-
-
 <style>
 table {
   width:50%;
