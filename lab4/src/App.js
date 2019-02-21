@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import './App.css';
 import TaskList from './todo/TaskList'
 import InputTask from "./todo/InputTask";
-
+import Info from './Info'
 
 // import Github from "./github";
 
@@ -26,11 +26,8 @@ class App extends Component {
 
        return (
            <div className="App">
-               <h1>Todo</h1>
-               <TaskList tasks={this.state.tasks}/>
-               <InputTask addTask={this.addTask} id={this.state.id}/>
-               <br/>
-               {/* <Github/> */}
+
+               <Info />
            </div>
        );
    }
