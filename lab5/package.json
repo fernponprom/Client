@@ -4,18 +4,25 @@
   "description": "",
   "main": "index.js",
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
   "dependencies": {
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "press": "^0.1.1"
   },
   "devDependencies": {},
+<<<<<<< HEAD
+>>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
+=======
 >>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
+<<<<<<< HEAD
 <<<<<<< HEAD
   "license": "ISC",
   "dependencies": {
@@ -24,6 +31,9 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6"
   }
+=======
+  "license": "ISC"
+>>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
 =======
   "license": "ISC"
 >>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
