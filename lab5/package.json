@@ -3,10 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+<<<<<<< HEAD
+=======
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "press": "^0.1.1"
+  },
+  "devDependencies": {},
+>>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
+<<<<<<< HEAD
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -14,4 +24,7 @@
     "express": "^4.16.4",
     "express-session": "^1.15.6"
   }
+=======
+  "license": "ISC"
+>>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
 }

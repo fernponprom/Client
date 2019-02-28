@@ -1,12 +1,20 @@
+<<<<<<< HEAD
 var express = require('express')
 var app = express()
 var session = require('express-session')
 var BodyParser = require('body-parser')
 const PORT = 7777;
+=======
+var express = require('express');
+var app = express()
+
+app.use(express.static(__dirname+ '/images'))
+>>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
 
 app.set('views', './views')
 app.set('view engine', 'ejs')
 
+<<<<<<< HEAD
 app.use(session({ secret: 'keyboard cat', cookie: { maxAge: 60000 },
    resave : false, saveUninitialized: false }))
 app.use(BodyParser())
@@ -50,3 +58,26 @@ app.post('/admin', (req, res)=>{
 app.listen(PORT,()=>{
     console.log("running : " + PORT)
 });
+=======
+app.get('/', (req, res)=> {
+    res.send('HELLO WORLD')
+})
+
+app.get('/fruit', (req, res) =>{
+   res.render('fruit', {fruits: ['banana', 'apple'] , foo: 'bar'})
+})
+
+
+
+app.get('/computer', (req, res) => {
+    res.render('computer', {
+        computers:[{name:'window', photo:'/Window.jpg'},
+              {name:'OSX', photo:'/OSX.jpg'},
+              {name:'Android', photo:'/Android.jpg'},
+              {name:'IOS', photo:'/IOS.jpg'}
+    ]
+    })
+})
+ 
+app.listen(8000)
+>>>>>>> 4d2e3c839bc616c2503159d38abe301980040b5c
